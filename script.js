@@ -1,4 +1,4 @@
-var hamburguer = document.querySelector(".hamburguer")
+const hamburguer = document.querySelector(".hamburguer")
 
 
 hamburguer.addEventListener("click", function() {
