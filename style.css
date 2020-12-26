@@ -476,9 +476,9 @@ header{
 }
 
 .contato-wrapper {
-    width: 60%;
+    width: 70%;
     display: flex;
-    height: 30rem;
+    height: 35rem;
     box-shadow: 0 2rem 3rem rgb(0, 0, 0, 0.5);
 
 }
@@ -522,7 +522,7 @@ header{
 .field{
     background: transparent;
     border: none;
-    width: 25rem;
+    width: 30rem;
     font-size: 1.5rem;
     font-family: var(--font-secundary);
     border-bottom: 2px dashed #636363 ;
@@ -560,7 +560,7 @@ header{
 
 .btn-submit{
     width: 40%;
-    height: 2.5rem;
+    height: 2.8rem;
     font-size: 1.2rem;
     text-transform: uppercase;
     margin-top: 2rem;
@@ -585,10 +585,11 @@ header{
     width: 60%;
     height: 80%;
 
-    background: #ffffff99;
+    background: #7a7777d7;
     border-radius: 10px;
     box-shadow: 0 0.1rem 0.3rem rgb(0, 0, 0, 0.5);
     position: relative;
+    color: white;
 
 }
 
@@ -610,18 +611,61 @@ header{
 
 .sessao-orcamento form{
     margin: 4rem;
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
+    align-items: center; */
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem 0;
+}
+
+.group-layout label:nth-child(1) {
+    background-color: #6a3093;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 6px;
+    text-transform: uppercase;
 
 }
+
+/*
+
+.layout{
+    background-color: #555;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
 
 .sessao-orcamento label{
     font-family: var(--font-secundary);
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.8rem;
 }
+
+.sessao-orcamento .quantidade,  .script{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 1rem;
+}
+
+.sessao-orcamento .quantidade .label{
+    padding-right: 15px;
+}
+
 
 .sessao-orcamento input[type="number"]{
     font-family: var(--font-secundary);
@@ -633,6 +677,17 @@ header{
 
     padding: 0.3rem;
 }
+
+.sessao-orcamento input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+
+/* .sessao-orcamento input[ type="radio"]{
+    width: 15px;
+    height: 15px;
+} */
 
 .btn-orcamento{
     text-transform: uppercase;
@@ -674,7 +729,7 @@ footer{
 .social-list i{
     color: #a7a7a7;
     transition: 200ms;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .social-list i:hover{

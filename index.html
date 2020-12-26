@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="toggle-modal">
 
-        <div class="hamburguer">
+        <div class="hamburguer" >
             <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
+            <div class="line" id="line2"></div> 
             <div class="line" id="line3"></div>
             <span>Fechar</span>
         </div>
@@ -170,16 +170,20 @@
                     <h1>Contato</h1>
                     <form action="">
                         <div class="input-group">
-                            <input type="text" class="field" id="nome">
-                            <label for="nome" class="field-label">Nome</label>
+                            <input type="text" class="field" id="nome" placeholder="Nome" required>
+                            <label for="nome" class="field-label"></label>
                         </div>
                         <div class="input-group">
-                            <input type="text" class="field" id="email">
-                            <label for="email" class="field-label">E-mail</label>
+                            <input type="text" class="field" id="email" placeholder="E-mail" required>
+                            <label for="email" class="field-label"></label>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" class="field" id="telefone" placeholder="Telefone" required>
+                            <label for="telefone" class="field-label"></label>
                         </div>
                         <div class="input-group" id="mensagem">
-                            <textarea class=field></textarea>
-                            <label for="mensagem" class="field-label">Mensagem</label>
+                            <textarea class=field  placeholder="Mensagem" required></textarea>
+                            <label for="mensagem" class="field-label"></label>
                         </div>
                         <button type="submit" class=" btn btn-submit">Enviar</button>
                     </form>
@@ -187,32 +191,42 @@
             </div>
         </section>
 
-        <section class="sessao-orcamento" id="orcamento">
+        <!-- <section class="sessao-orcamento" id="orcamento">
             <div class="orcamento-wrapper">
                 <h1>Faça um orçamento</h1>
                 <form action="">
-                    <label for="qtde">Quantidade de Páginas</label>
-                    <input type="number" min="1" name="qtde" id="qtde">
-                    <label for="js">Preciso de um script JS</label>
-                    <input type="checkbox" name="js" id="js">
-                    <label>Layout</label>
+                    <div class="quantidade">
+                        <label for="qtde" class="label">Quantidade de Páginas:</label>
+                        <input type="number" min="1" name="qtde" id="qtde">
+                    </div>
+
+                    <div class="script">
+                        <input type="checkbox" name="js" id="js">
+                        <label for="js">Preciso de um script JS</label>
+                    </div>
+
                     <div class="group-layout">
-                        <div>
+                        <label>Layout</label>
+
+                        <div class="layout">
                            <input type="radio" name="layout" id="layout-sim">
                            <label for="layout-sim">Preciso de um layout</label> 
                         </div>
-                        <div>
+                        <div class="layout">
                            <input type="radio" name="layout" id="layout-nao">
                            <label for="layout-nao">Já tenho um layout</label> 
                         </div>
                     </div>
+                    
+                    <div>
                         <label for="prazo">Prazo</label>
                         <input type="range" name="prazo" id="prazo" min="1" max="10">
                         <label id="preco">R$ 0,00</label>
                         <button class="btn btn-orcamento" type="submit">Enviar</button>
+                    </div>  
                 </form>
             </div>
-        </section>
+        </section> -->
 
         <footer>
             <div class="footer-content">
@@ -229,9 +243,9 @@
                 </div>
             </div>
         </footer>
-        <a href="#home" id="link-topo">
+        <!-- <a href="#home" id="link-topo">
             <i class="fas fa-arrow-up"></i>
-        </a>
+        </a> -->
 
         
 
