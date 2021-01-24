@@ -163,6 +163,7 @@ header{
     background: linear-gradient(to right #a044ff, #6a3093); 
     padding: 1rem 3rem;
     border: none;
+    /* color: #eee; */
     text-transform: uppercase;
     letter-spacing: .1rem;
     border-radius: 6px;
@@ -171,6 +172,11 @@ header{
     opacity: 0;
     animation: moveBanner 1s 0.9s forwards;
 
+}
+
+.banner button a {
+    text-decoration: none;
+    color: white;
 }
 
 .banner button:hover{
@@ -485,8 +491,8 @@ header{
 
 .contato-left{
     width: 35%;
-    background: linear-gradient(rgba(107, 106, 106, 0.5), rgba(65, 62, 62, 0.8)), 
-    url(img/contato.jpg);
+    background: linear-gradient(rgba(107, 106, 106, 0.5), rgba(65, 62, 62, 0.8));
+    background-image: url(../img/contato.jpg);
     background-size: cover;
     border-radius: 10px 0 0 10px;
 
@@ -742,5 +748,7 @@ footer{
     width: 3rem;
     height: 3rem;
 }
+
+
 
 
