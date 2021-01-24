@@ -376,16 +376,22 @@ header{
 /* projetos */
 
 .projetos{
-    display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    /* justify-content: space-evenly; */
+    /* height: 100vh; */
 }
 
 .card{
-    margin-top: 6rem;
+    margin: 4rem 0 0 2rem;
     width: 25rem;
     height: 30rem;
     position: relative;
+}
+
+.card:last-child{
+    margin-bottom: 4rem;
 }
 
 .card-img-wrapper{
@@ -393,7 +399,9 @@ header{
     height: 100%;
     background-color: #262626;
     border-radius: .6rem;
-
+    /* background-image: url("../img/proffy.png"); */
+    /* background: url("../img/proffy.png") no-repeat center center; */
+    
 }
 
 .card-img-wrapper img{
@@ -401,13 +409,13 @@ header{
     width: 100%;
     height: 100%;
     border-radius: .6rem;
-
+    
     opacity: .8;
     transition: opacity .4s;
 }
 
 .card:hover .card-img-wrapper img{
-    opacity: .6;
+    opacity: .4;
 }
 
 
@@ -441,9 +449,13 @@ header{
 .card-info p{
     font-family: var(--font-secundary);
     color: #eee;
-    font-weight: 400;
+    font-weight: 600;
     width: 80%;
     margin-bottom: 2rem;
+}
+
+.card-info button a {
+    color: white;
 }
 
 .btn{
