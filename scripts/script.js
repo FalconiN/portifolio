@@ -43,3 +43,5 @@ hamburguer.addEventListener("click", function() {
 //     document.querySelector("#preco").innerHTML = `R$ ${preco}`
     
 // }
+
+
