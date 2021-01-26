@@ -308,7 +308,7 @@ header{
 }
 
 .sessao-conhecimentos{
-    background-color: #EBEDEF;
+    background-color: #d7dde4;
     height: 100vh;
     width: 100%;
 
@@ -353,6 +353,7 @@ header{
 .conhecimento-text {
     font-family: var(--font-secundary);
     margin-top: 1rem;
+    font-weight: 500;
 }
 
 .conhecimento-img-wrapper{
@@ -384,10 +385,12 @@ header{
 }
 
 .card{
-    margin: 4rem 0 0 2rem;
+    margin: 4rem 0 0 1rem;
     width: 25rem;
     height: 30rem;
     position: relative;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, 0.5);
+    border-radius: .6rem;
 }
 
 .card:last-child{

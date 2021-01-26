@@ -1,10 +1,11 @@
 const hamburguer = document.querySelector(".hamburguer")
 // const toggleModal = document.querySelector('#toggle-modal')
 
-
 hamburguer.addEventListener("click", function() {
     document.querySelector(".container").classList.toggle("show-menu")
 })
+
+
 
 // for (var i = 0; i < toggleModal.length; i++) {
 //     console.log(toggleModal[i])
